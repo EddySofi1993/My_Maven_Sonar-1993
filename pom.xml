@@ -18,6 +18,9 @@
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   </properties>
+  <properties>
+    <sonar.login>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</sonar.login>
+</properties>
   <build>
     <pluginManagement>
       <plugins>

@@ -4,7 +4,7 @@
   <groupId>com.mycompany.app</groupId>
   <artifactId>my-app</artifactId>
   <packaging>jar</packaging>
-  <version>1.6.3-SNAPSHOT</version>
+  <version>1.6.3-snapshots</version>
   <name>my-app</name>
   <url>http://maven.apache.org</url>
   <dependencies>
@@ -86,7 +86,7 @@
     <distributionManagement>
     <snapshotRepository>
       <id>java-maven-app-snapshot</id>
-      <url>http://3.106.212.159:8081/repository/java-maven-app-SNAPSHOT/</url>
+      <url>http://3.106.212.159:8081/repository/java-maven-app-snapshots/</url>
     </snapshotRepository>
     <repository>
       <id>java-maven-app-release</id>

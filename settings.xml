@@ -5,14 +5,14 @@
 
   <servers>
     <server>
-      <id>java-maven-app-snapshot</id>
+      <id>My_Maven_Sonar-1993-snapshot</id>
       <username>admin</username>
-      <password>admin</password>
+      <password>admin2</password>
     </server>
     <server>
-      <id>java-maven-app-release</id>
+      <id>My_Maven_Sonar-1993-release</id>
       <username>admin</username>
-      <password>admin</password>
+      <password>admin2</password>
     </server>
   </servers>
 

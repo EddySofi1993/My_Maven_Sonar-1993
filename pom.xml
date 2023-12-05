@@ -79,18 +79,18 @@
   </build>
  <repositories>
     <repository>
-      <id>java-maven-app-group</id>
-      <url>http://3.106.170.148:8081/repository/java-maven-app-group/</url>
+      <id>My_Maven_Sonar-1993-group</id>
+      <url>http://13.210.0.226:8081/repository/My_Maven_Sonar-1993-group/</url>
     </repository>
   </repositories>
     <distributionManagement>
     <snapshotRepository>
-      <id>java-maven-app-snapshot</id>
-      <url>http://3.106.170.148:8081/repository/java-maven-app-snapshot/</url>
+      <id>My_Maven_Sonar-1993-snapshot</id>
+      <url>http://13.210.0.226:8081/repository/My_Maven_Sonar-1993-snapshot/</url>
     </snapshotRepository>
     <repository>
-      <id>java-maven-app-release</id>
-      <url>http://3.106.170.148:8081/repository/java-maven-app-release/</url>
+      <id>My_Maven_Sonar-1993-release</id>
+      <url>http://13.210.0.226:8081/repository/My_Maven_Sonar-1993-release/</url>
     </repository>
   </distributionManagement>
 </project>

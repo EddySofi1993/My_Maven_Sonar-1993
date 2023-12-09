@@ -32,9 +32,7 @@ pipeline{
             }
         }
         stage('deployment'){
-            agent{
-                label any
-            }
+            agent any
             steps{
                 sh 'ansible-playbook all deployment_playbook.yml -e "build_number=${BUILD_NUMBER}"'
             }

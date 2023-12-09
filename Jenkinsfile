@@ -31,14 +31,14 @@ pipeline{
                 sh 'mvn -s settings.xml clean deploy'
             }
         }
-        stage('deployment'){
+        /* stage('deployment'){
             agent{
                 label any
             }
             steps{
                 sh 'ansible-playbook all deployment_playbook.yml -e "build_number=${BUILD_NUMBER}"'
             }
-        }
+        } */
 
     }
 }

@@ -34,7 +34,7 @@ pipeline{
         stage('deployment'){
             agent any
             steps{
-                sh 'ansible-playbook -i inventry deployment_playbook.yml -e "build_number=${BUILD_NUMBER}"'
+                sh 'ansible-playbook -i inventry.yml deployment_playbook.yml -e "build_number=${BUILD_NUMBER}"'
             }
         }
 

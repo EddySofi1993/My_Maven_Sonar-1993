@@ -5,23 +5,23 @@
   vars:
     nexus_url: http://ec2-13-236-191-234.ap-southeast-2.compute.amazonaws.com:8081/repository
     repository_type: My_Maven_Sonar-1993-release
-    group_id: com%2Fmycompany%2Fapp
+    group_id: com/mycompany/app
     artifact_id: my-java-app
     version: 1.0.0
     build_number: "{{build_number}}"
   tasks:
   - name: Download file from a file path
     ansible.builtin.get_url:
-      url: "{{nexus_url}}/{{repository_type}}/{{group_id}}%2F{{artifact_id}}%2F{{version}}-{{build_number}}%2F{{artifact_id}}-{{version}}-{{ build_number}}.war"
+      url: "{{nexus_url}}/{{repository_type}}/{{group_id}}/{{artifact_id}}/{{version}}-{{build_number}}/{{artifact_id}}-{{version}}-{{ build_number}}.war"
       dest: /home/ec2-user
       username: admin
       password: admin2
 
   - name: Rename war file
-    ansible.builtin.shell: mv /home/ec2-user/{{group_id}}%2F{{artifact_id}}%2F{{version}}-{{build_number}}%2F{{artifact_id}}-{{version}}-{{ build_number}}.war /home/ec2-user/myexample.war
+    ansible.builtin.shell: mv /home/ec2-user/{{group_id}}/{{artifact_id}}/{{version}}-{{build_number}}/{{artifact_id}}-{{version}}-{{ build_number}}.war /home/ec2-user/myexample.war
 
   - name: Deploying artifact in webapps
-    ansible.builtin.shell: cp /home/ec2-user/myexample.war /home/ec2-user/apache-tomcat-9.0.75/webapps/myexample.war
+    ansible.builtin.shell: cp /home/ec2-user/myexample.war /home/ec2-user//tomcat/apache-tomcat-10.1.16/webapps/myexample.war
 
   - name: remove the artifact
     ansible.builtin.shell: rm -rf /home/ec2-user/myexample.war

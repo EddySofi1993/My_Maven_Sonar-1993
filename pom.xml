@@ -2,9 +2,9 @@
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.mycompany.app</groupId>
-  <artifactId>my-app</artifactId>
-  <packaging>jar</packaging>
-  <version>1.6.3-snapshot</version>
+  <artifactId>my-java-app</artifactId>
+  <packaging>war</packaging>
+  <version>1.6.3-${env.BUILD_NUMBER}</version>
   <name>my-app</name>
   <url>http://maven.apache.org</url>
   <dependencies>
@@ -18,7 +18,9 @@
   </dependencies>
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-  </properties>
+    <maven.compiler.source>1.6</maven.compiler.source>
+    <maven.compiler.target>1.6</maven.compiler.target>
+      </properties>
     <build>
     <pluginManagement>
       <plugins>
@@ -80,17 +82,17 @@
  <repositories>
     <repository>
       <id>My_Maven_Sonar-1993-group</id>
-      <url>http://3.27.173.54:8081/repository/My_Maven_Sonar-1993-group/</url>
+      <url>http://13.236.191.234:8081/repository/My_Maven_Sonar-1993-group/</url>
     </repository>
   </repositories>
     <distributionManagement>
     <snapshotRepository>
       <id>My_Maven_Sonar-1993-snapshot</id>
-      <url>http://3.27.173.54:8081/repository/My_Maven_Sonar-1993-snapshot/</url>
+      <url>http://13.236.191.234:8081/repository/My_Maven_Sonar-1993-snapshot/</url>
     </snapshotRepository>
     <repository>
       <id>My_Maven_Sonar-1993-release</id>
-      <url>http://3.27.173.54:8081/repository/My_Maven_Sonar-1993-release/</url>
+      <url>http://13.236.191.234:8081/repository/My_Maven_Sonar-1993-release/</url>
     </repository>
   </distributionManagement>
 </project>

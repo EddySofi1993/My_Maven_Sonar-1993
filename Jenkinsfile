@@ -17,12 +17,12 @@ pipeline{
          stage("SonarQube"){
             steps{
                     withSonarQubeEnv("SonarQube") {
-                        sh "${tool("SonarScanner")}/bin/sonar-scanner \
+                        sh "${tool("SonarQube")}/bin/sonar-scanner \
                         -Dsonar.projectKey=My_Maven_Sonar-1993 \
                         -Dsonar.sources=. \
                         -Dsonar.java.binaries=target \
-                        -Dsonar.host.url=http://3.25.137.149:9000/ \
-                        -Dsonar.login=sqp_95794de8397f53e130cef5944bcbd96fb36ace72"
+                        -Dsonar.host.url=http://54.79.217.142:9000/ \
+                        -Dsonar.login=sqp_1498ebc583643fde0981587afaba76744a731442"
                          }
                 }
         }
@@ -31,7 +31,16 @@ pipeline{
                 sh 'mvn -s settings.xml clean deploy'
             }
         }
+        stage('deployment'){
+            agent{
+                label any
+            }
+            steps{
+                sh 'ansible-playbook all deployment_playbook.yml -e "build_number=${BUILD_NUMBER}"'
+            }
+        }
+
     }
-    
 }
-       
+
+    

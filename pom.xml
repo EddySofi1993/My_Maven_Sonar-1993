@@ -75,17 +75,17 @@
  <repositories>
     <repository>
       <id>My_Maven_Sonar-1993-group</id>
-      <url>http://13.236.191.234:8081/repository/My_Maven_Sonar-1993-group/</url>
+      <url>http://3.106.249.175:8081/repository/My_Maven_Sonar-1993-group/</url>
     </repository>
   </repositories>
     <distributionManagement>
     <snapshotRepository>
       <id>My_Maven_Sonar-1993-snapshot</id>
-      <url>http://13.236.191.234:8081/repository/My_Maven_Sonar-1993-snapshot/</url>
+      <url>http://3.106.249.175:8081/repository/My_Maven_Sonar-1993-snapshot/</url>
     </snapshotRepository>
     <repository>
       <id>My_Maven_Sonar-1993-release</id>
-      <url>http://13.236.191.234:8081/repository/My_Maven_Sonar-1993-release/</url>
+      <url>http://3.106.249.175:8081/repository/My_Maven_Sonar-1993-release/</url>
     </repository>
   </distributionManagement>
 </project>

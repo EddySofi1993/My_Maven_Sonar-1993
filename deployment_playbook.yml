@@ -7,7 +7,7 @@
     repository_type: My_Maven_Sonar-1993-release
     group_id: com/mycompany/app
     artifact_id: my-java-app
-    version: 1.0.0
+    version: 1.6.3
     build_number: "{{build_number}}"
   tasks:
   - name: Download file from a file path

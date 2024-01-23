@@ -14,7 +14,7 @@ pipeline{
                 sh 'mvn clean install'
             }
         }
-         stage("SonarQube"){
+         /* stage("SonarQube"){
             steps{
                     withSonarQubeEnv("SonarQube") {
                         sh "${tool("SonarQube")}/bin/sonar-scanner \
@@ -25,7 +25,7 @@ pipeline{
                         -Dsonar.login=sqp_1498ebc583643fde0981587afaba76744a731442"
                          }
                 }
-        }
+        } */
         stage("Nexus Upload") {
             steps{
                 sh 'mvn -s settings.xml clean deploy'

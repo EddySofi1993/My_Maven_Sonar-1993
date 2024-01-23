@@ -21,7 +21,7 @@ pipeline{
                         -Dsonar.projectKey=My_Maven_Sonar-1993 \
                         -Dsonar.sources=. \
                         -Dsonar.java.binaries=target \
-                        -Dsonar.host.url=http://52.62.211.159:9000/ \
+                        -Dsonar.host.url=http://3.106.252.125:9000/ \
                         -Dsonar.login=sqp_1498ebc583643fde0981587afaba76744a731442"
                          }
                 }
